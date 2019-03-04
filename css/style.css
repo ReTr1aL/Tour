@@ -1,0 +1,160 @@
+body {
+    margin: 0px;
+}
+
+#header {
+    background-image: url(../img/1.jpg);
+    height: 735px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+#navbar {
+    position: absolute;
+    left: 39%;
+    top: 8%;
+    list-style: none;
+    display: flex;
+    background: #fbd341;
+    padding: 0px;
+    font-size: 18px;
+    font-family: arial;
+    border-radius: 11px;
+}
+
+#tours {
+    margin-right: 4px;
+    position: relative;
+}
+
+#tours::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 2px;
+    background: black;
+    position: absolute;
+    top: 57%;
+    left: 76%;
+    transform: rotate(45deg);
+    border-radius: 30%;
+}
+
+#tours::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 2px;
+    background: black;
+    position: absolute;
+    top: 57%;
+    left: 84%;
+    transform: rotate(135deg);
+    border-radius: 30%;
+}
+
+#services::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 2px;
+    background: black;
+    position: absolute;
+    top: 56%;
+    left: 80%;
+    transform: rotate(45deg);
+    border-radius: 30%;
+}
+
+#services::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 2px;
+    background: black;
+    position: absolute;
+    top: 56%;
+    left: 86%;
+    transform: rotate(135deg);
+    border-radius: 30%;
+}
+
+#services {
+    position: relative;
+}
+
+.visibletour {
+    display: none;
+}
+
+.visibleservises {
+    display: none;
+}
+
+#toursmenu {
+    position: absolute;
+    top: 100%;
+    background-color: rgba(34, 138, 207, 0.8);
+    padding: 0px;
+    font-size: 14px;
+    font-family: arialRegular;
+    padding-bottom: 15px;
+}
+
+#servisesmenu {
+    position: absolute;
+    top: 100%;
+    background-color: rgba(34, 138, 207, 0.8);
+    padding: 0px;
+    font-size: 14px;
+    font-family: arialRegular;
+    padding-bottom: 15px;
+}
+
+#toursmenu li {
+    display: block;
+    color: white;
+}
+
+#servisesmenu li {
+    display: block;
+    color: white;
+}
+
+#toursmenu li a {
+    color: aliceblue;
+    padding: 15 30 0px;
+    white-space: nowrap;
+}
+
+#toursmenu li a:hover {
+    color: #ecf887;
+}
+
+#servisesmenu li a:hover {
+    color: #ecf887;
+}
+
+#servisesmenu li a {
+    color: aliceblue;
+    padding: 15 32 0px;
+    white-space: nowrap;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: black;
+    padding: 17 30 12px;
+    display: block;
+}
+
+@font-face {
+    font-family: "arial";
+    src: url(../font/arial.ttf);
+}
+
+@font-face {
+    font-family: "arialRegular";
+    src: url(../font/arialRegular.ttf);
+}
