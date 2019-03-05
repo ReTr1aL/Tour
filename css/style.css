@@ -8,11 +8,13 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 #navbar {
     position: absolute;
-    left: 39%;
+    right: 19%;
     top: 8%;
     list-style: none;
     display: flex;
@@ -36,7 +38,7 @@ body {
     background: black;
     position: absolute;
     top: 57%;
-    left: 76%;
+    left: 77%;
     transform: rotate(45deg);
     border-radius: 30%;
 }
@@ -149,6 +151,469 @@ body {
     display: block;
 }
 
+footer {
+    background: #22334d;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 3;
+    height: 200px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.block {
+    margin: 0 75;
+}
+
+.categories {
+    margin: 10 0px;
+    font-size: 14px;
+    font-family: arialRegular;
+}
+
+.headline {
+    font-size: 18px;
+    font-family: arial;
+}
+
+.logo {
+    margin-bottom: 25px;
+}
+
+.text {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    margin-top: 25px;
+    font-size: 14px;
+    font-family: arialRegular;
+}
+
+.marker {
+    margin-right: 10px;
+}
+
+span {
+    font-size: 14px;
+    font-family: arialRegular;
+    opacity: 0.7;
+}
+
+.inst {
+    margin-left: 20px;
+}
+
+.border {
+    border-bottom: 1px solid #38475f;
+}
+
+.logoheader {
+    position: absolute;
+    left: 21%;
+    top: 4%;
+}
+
+.info {
+    color: white;
+    display: flex;
+    position: absolute;
+    right: 17.5%;
+    top: 2.5%;
+}
+
+.info p {
+    margin-right: 35px;
+}
+
+.bestdeals {
+    width: 1350px;
+    height: 230px;
+    background-color: rgba(1, 73, 128, 0.5);
+    position: absolute;
+    top: 46%;
+}
+
+.deals {  
+    color: white;
+    font-size: 30px;
+    font-family: arial;
+    margin-left: 400px;
+}
+
+button a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 20 30px;
+    border-radius: 15px;
+    font-size: 18px;
+    font-family: arialRegular;
+    opacity: 0.8;
+}
+
+button {
+    padding: 0px;
+    border: none;
+    background: #fbd341;
+    border-radius: 15px;
+    margin-left: 405px;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    background: #bdcad2;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.active {
+    background: #fbd341;
+}
+
+#activeblock {
+    position: absolute;
+    bottom: 3.5%;
+    left: 20.5%;
+}
+
+main {
+    height: 950px;
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel {
+    position: relative;
+    padding-top: 40px;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.carousel-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.carousel-control {
+    border-radius: 50%;
+    color: #575757;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.carousel-control.prev::before {
+    content: "";
+    display: block;
+    width: 13px;
+    height: 2px;
+    background: black;
+    position: absolute;
+    top: 38.5%;
+    left: 36%;
+    transform: rotate(135deg);
+    border-radius: 30%;
+}
+
+.carousel-control.prev::after {
+    content: "";
+    display: block;
+    width: 13px;
+    height: 2px;
+    background: black;
+    position: absolute;
+    top: 62.5%;
+    left: 36%;
+    transform: rotate(225deg);
+    border-radius: 30%;
+}
+
+.carousel-control.next::before {
+    content: "";
+    display: block;
+    width: 13px;
+    height: 2px;
+    background: black;
+    position: absolute;
+    top: 38.5%;
+    left: 36%;
+    transform: rotate(-135deg);
+    border-radius: 30%;
+}
+
+.carousel-control.next::after {
+    content: "";
+    display: block;
+    width: 13px;
+    height: 2px;
+    background: black;
+    position: absolute;
+    top: 62.5%;
+    left: 36%;
+    transform: rotate(-225deg);
+    border-radius: 30%;
+}
+
+.carousel-control.prev {
+    left: 2%;
+}
+
+.carousel-control.next {
+    right: 2%;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+
+.slideitem {
+    display: flex;
+    background: #f8f7f7;
+}
+
+.transfer {
+    width: 35px;
+    height: 35px;
+    background: #fbd341;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+}
+
+.transfer a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.transfer::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 2px;
+    background: black;
+    position: absolute;
+    top: 41%;
+    left: 40%;
+    transform: rotate(-135deg);
+    border-radius: 30%;
+}
+
+.transfer::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 2px;
+    background: black;
+    position: absolute;
+    top: 58%;
+    left: 40%;
+    transform: rotate(-225deg);
+    border-radius: 30%;
+}
+
+.slideinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    margin-left: 30px;
+}
+
+.slideinfo p {
+    margin: 0px;
+}
+
+.time {
+    font-size: 17px;
+    font-family: arial;
+    padding-top: 10px;
+}
+
+.period {
+    font-size: 14px;
+    font-family: arialRegular;
+    opacity: 0.7;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.conditions {
+    font-size: 14px;
+    font-family: arialRegular;
+}
+
+.bordertop {
+    border-top: 1px solid #eae9e9;
+    padding-top: 15px;
+}
+
+.sum {
+    font-size: 20px;
+    font-family: arialRegular;
+    padding-top: 25px;
+}
+
+sup {
+    font-size: 11px;
+    font-family: arialRegular;
+    opacity: 0.4;
+}
+
+.slideright {
+    margin-right: 90px;
+}
+
+.maintour {
+    font-size: 20px;
+    font-family: arial;
+    display: inline-block;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.activemenu {
+    color: #fbd341;
+}
+
+.toursmenucontainer {
+    position: absolute;
+    left: 21.5%;
+    margin-top: 70px;
+    z-index: 2;
+}
+
+.advantagescontainer {
+    display: flex;
+    justify-content: center;
+    background: #f8f7f7;
+}
+
+.advantages {
+    display: flex;
+}
+
+.advantages p {
+    font-size: 24px;
+    font-family: arial;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#registration {
+    background-image: url(../img/31.jpg);
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 27px;
+    margin-bottom: 240px;
+}
+
+#registration div {
+    color: white;
+    position: absolute;
+    top: 15%;
+    font-size: 24px;
+    font-family: arial;
+    left: 19.5%;
+}
+
+#submit {
+    cursor: pointer;
+    padding: 15 30px;
+    font-size: 18px;
+    font-family: "arialRegular";
+    margin: 0px;
+}
+
+form {
+    background: rgba(0, 0, 0, 0.5);
+    height: 150px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+}
+
+input {
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid rgba(197, 189, 189, 0.5);
+    margin-right: 40px;
+    background: rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+input::placeholder {
+    color: white;
+    opacity: 0.8;
+}
+
 @font-face {
     font-family: "arial";
     src: url(../font/arial.ttf);
@@ -157,4 +622,35 @@ body {
 @font-face {
     font-family: "arialRegular";
     src: url(../font/arialRegular.ttf);
+}
+
+#page {
+    width: 500px;
+    padding-left: 50px;
+    padding-right: 50px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 200px;
+    font-size: 16px;
+    font-family: "arialRegular";
+    line-height: 1.4;
+    margin-top: 130px;
+    margin-left: 30px;
+}
+
+#page::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+#page::-webkit-scrollbar-track {
+    background: #e1e0e0;
+    border: 4px solid transparent;
+    background-clip: content-box; 
+}
+
+/* Handle */
+#page::-webkit-scrollbar-thumb {
+    background: #fbd341;
+    border-radius: 10px;
 }

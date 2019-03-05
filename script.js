@@ -44,3 +44,44 @@ function servisesMenuOn() {
     })
 };
 servisesMenuOn()
+
+function circleActive () {
+    let circle = document.querySelectorAll('.circle');
+    let block = document.getElementById('activeblock');
+    block.addEventListener('click', function (event) {
+        if(event.target == circle[1]) {
+            circle[0].classList.remove('active');
+            circle[1].classList.add('active');
+            circle[2].classList.remove('active');
+        }
+        else if(event.target == circle[2]) {
+            circle[1].classList.remove('active');
+            circle[2].classList.add('active');
+            circle[0].classList.remove('active');
+        }
+        else if (event.target == circle[0]){
+            circle[1].classList.remove('active');
+            circle[2].classList.remove('active');
+            circle[0].classList.add('active');
+        }
+    })
+};
+
+circleActive ()
+
+function mainTourActive () {
+    let maintour = document.querySelectorAll('.maintour');
+    let blockparent = document.getElementById('mainparent');
+    blockparent.addEventListener('click', function (event) {
+        if(event.target == maintour[1]) {
+            maintour[0].classList.remove('activemenu');
+            maintour[1].classList.add('activemenu');
+        }
+        else if(event.target == maintour[0]) {
+            maintour[1].classList.remove('activemenu');
+            maintour[0].classList.add('activemenu');
+        }
+    })
+};
+
+mainTourActive ()

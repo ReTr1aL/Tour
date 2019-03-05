@@ -9,6 +9,21 @@
 <body>
     <header>
             <div id="header">
+                <img src="img/logoheader.png" alt="" class="logoheader">
+                <div class="info">
+                        <p><img src="img/markerplace.png" alt="" class="marker"><span>г. Харьков, ул. Лермонтовская 10а</span></p>
+                        <p><img src="img/markerphone.png" alt="" class="marker"><span>+38 (099) 990-81-00</span></p>
+                        <p><a href="#"><img src="img/facebook.png" alt=""></a><a href="#"><img src="img/instagram.png" alt="" class="inst"></a></p>
+                </div>
+                <div class="bestdeals">
+                    <p class="deals">Лучшие предложения по солнечному Египту из Харькова</p>
+                    <button><a href="#">Получить предложение</a></button>
+                </div>
+                <div id="activeblock">
+                    <p class="circle active"></p>
+                    <p class="circle"></p>
+                    <p class="circle"></p>
+                </div>
                 <ul id="navbar">
                     <li><a href="#">Главная</a></li>
                     <li id="tours"><a id="tourslink" href="#">Туры</a>
@@ -27,13 +42,150 @@
                             <li><a href="#">Визовая поддержка</a></li>
                             <li><a href="#">Индивидуальный трансфер</a></li>
                             <li><a href="#">Подарочные сертификаты</a></li>
-                            <li><a href="#">Бронирование отелей</a></li>
+                            <li><a href="#">Бронирование отелей <br>и аппартаментов</a></li>
+                            <li><a href="#">Как забронировать <br>и оплатить тур</a></li>
                         </ul></li>
                     <li><a href="#">О компании</a></li>
                     <li><a href="#">Контакты</a></li>
                 </ul>
             </div>
     </header>
+    <main>
+        <div id="mainparent" class="toursmenucontainer">
+                <label for="carousel-1" class="maintour activemenu">Горящие Туры</label>
+                <label   for="carousel-2" class="maintour">Популярные туры</label>
+        </div>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+                <div class="carousel-item">
+                    <div class="slideitem slideright">
+                            <img src="img/10.jpg" alt="">
+                            <div class="slideinfo">
+                                <p class="time">8 марта в Cyrene Sharm hotel</p>
+                                <p class="period">(12.03.2018 &#8212; 19.03.2018)</p>
+                                <p class="conditions bordertop">Перелет, питание по системе all inclusive,</p>
+                                <p class="conditions">трансфер</p>
+                                <p class="sum">1 259 грн <sup>/за 1 человека</sup></p>
+                                <p class="transfer"><a href="#"></a></p>
+                            </div>
+                    </div>
+                    <div class="slideitem slideright">
+                            <img src="img/11.jpg" alt="">
+                            <div class="slideinfo">
+                                    <p class="time">8 марта в Cyrene Sharm hotel</p>
+                                    <p class="period">(12.03.2018 &#8212; 19.03.2018)</p>
+                                    <p class="conditions bordertop">Перелет, питание по системе all inclusive,</p>
+                                    <p class="conditions">трансфер</p>
+                                    <p class="sum">1 259 грн <sup>/за 1 человека</sup></p>
+                                    <p class="transfer"><a href="#"></a></p>
+                                </div>
+                    </div>
+                    <div class="slideitem">
+                            <img src="img/11.jpg" alt="">
+                            <div class="slideinfo">
+                                    <p class="time">8 марта в Cyrene Sharm hotel</p>
+                                    <p class="period">(12.03.2018 &#8212; 19.03.2018)</p>
+                                    <p class="conditions bordertop">Перелет, питание по системе all inclusive,</p>
+                                    <p class="conditions">трансфер</p>
+                                    <p class="sum">1 259 грн <sup>/за 1 человека</sup></p>
+                                    <p class="transfer"><a href="#"></a></p>
+                                </div>
+                    </div>
+                </div>
+                <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item">
+                        <div class="slideitem slideright">
+                                <img src="img/11.jpg" alt="">
+                                <div class="slideinfo">
+                                        <p class="time">8 марта в Cyrene Sharm hotel</p>
+                                        <p class="period">(12.03.2018 &#8212; 19.03.2018)</p>
+                                        <p class="conditions bordertop">Перелет, питание по системе all inclusive,</p>
+                                        <p class="conditions">трансфер</p>
+                                        <p class="sum">1 259 грн <sup>/за 1 человека</sup></p>
+                                        <p class="transfer"><a href="#"></a></p>
+                                    </div>
+                        </div>
+                        <div class="slideitem slideright">
+                                <img src="img/11.jpg" alt="">
+                                <div class="slideinfo">
+                                        <p class="time">8 марта в Cyrene Sharm hotel</p>
+                                        <p class="period">(12.03.2018 &#8212; 19.03.2018)</p>
+                                        <p class="conditions bordertop">Перелет, питание по системе all inclusive,</p>
+                                        <p class="conditions">трансфер</p>
+                                        <p class="sum">1 259 грн <sup>/за 1 человека</sup></p>
+                                        <p class="transfer"><a href="#"></a></p>
+                                    </div>
+                        </div>
+                        <div class="slideitem">
+                                <img src="img/10.jpg" alt="">
+                                <div class="slideinfo">
+                                        <p class="time">8 марта в Cyrene Sharm hotel</p>
+                                        <p class="period">(12.03.2018 &#8212; 19.03.2018)</p>
+                                        <p class="conditions bordertop">Перелет, питание по системе all inclusive,</p>
+                                        <p class="conditions">трансфер</p>
+                                        <p class="sum">1 259 грн <sup>/за 1 человека</sup></p>
+                                        <p class="transfer"><a href="#"></a></p>
+                                    </div>
+                        </div>
+                </div>
+                <label for="carousel-3" class="carousel-control prev control-1"></label>
+                <label for="carousel-2" class="carousel-control next control-1"></label>
+                <label for="carousel-1" class="carousel-control prev control-2"></label>
+                <label for="carousel-3" class="carousel-control next control-2"></label>
+            </div>
+            </div>
+            <div class="advantagescontainer">
+                <div class="advantages">
+                    <div class="center">
+                            <p>Наши преимущества</p>
+                            <img src="img/21.jpg" alt="">
+                    </div>
+                    <div id="page" class=".custom_scrollbar">
+                            Очень долго подбирали разные варианты для того, чтобы отпраздновать свой юбилейный День рождения в путешествии и не могли определиться... Решили обратиться за помощью в турагенство. Гульнара, выслушав все пожелания, предложила отдых в Турции, отель Justiniano Club Park Conti 5* в Окурджалар возле Аланьи. Мы очень благодарны ей за предложенный вариант!!!! Отдых получился отличный! Отель с большой ухоженной территорией, внимательный обслуживающий персонал. Отличный номер с видом на море. <br>Очень долго подбирали разные варианты для того, чтобы отпраздновать свой юбилейный День рождения в путешествии и не могли определиться... Решили обратиться за помощью в турагенство. Гульнара, выслушав все пожелания, предложила отдых в Турции, отель Justiniano Club Park Conti 5* в Окурджалар возле Аланьи. Мы очень благодарны ей за предложенный вариант!!!! Отдых получился отличный! Отель с большой ухоженной территорией, внимательный обслуживающий персонал. Отличный номер с видом на море. <br>Очень долго подбирали разные варианты для того, чтобы отпраздновать свой юбилейный День рождения в путешествии и не могли определиться... Решили обратиться за помощью в турагенство. Гульнара, выслушав все пожелания, предложила отдых в Турции, отель Justiniano Club Park Conti 5* в Окурджалар возле Аланьи. Мы очень благодарны ей за предложенный вариант!!!! Отдых получился отличный! Отель с большой ухоженной территорией, внимательный обслуживающий персонал. Отличный номер с видом на море. 
+                    </div>
+                </div>
+            </div>
+    </main>
+    <div id="registration">
+        <div>Хочу предложение по туру</div>
+        <form action="">
+            <input type="text" placeholder="Имя">
+            <input type="email" placeholder="Email">
+            <input type="tel" placeholder="Телефон">
+            <input type="text" placeholder="Страна тура">
+            <button id="submit" type="submit">Получить предложение</button>
+        </form>
+    </div>
+    <footer>
+        <div class="block">
+            <div class="border">
+                <img class="logo" src="img/6.png" alt="logo">
+            </div>
+            <div class="text border">Кураж тур агенство, которое предоставляет<br> услуги по поиску, оформлению и подбору туров<br> для вас и ваших родных.</div>
+            <div><span>Создание сайта</span> &#8212;  <img src="img/logo.png" alt=""></div>            
+        </div>
+        <div class="block">
+            <p class="headline"><a href="#">НАВИГАЦИЯ</a></p>
+            <p class="categories"><a href="#">Главная</a></p>
+            <p class="categories"><a href="#">О компании</a></p>
+            <p class="categories"><a href="#">Туры</a></p>
+            <p class="categories"><a href="#">Контакты</a></p>
+            <p class="categories"><a href="#">Услуги</a></p>
+        </div>
+        <div class="block">
+            <p class="headline"><a href="#">ПОДДЕРЖКА</a></p>
+            <p class="categories"><a href="#">FAQ</a></p>
+            <p class="categories"><a href="#">Блог</a></p>
+            <p class="categories"><a href="#">Обратная связь</a></p>
+        </div>
+        <div class="block">
+            <p class="headline">КОНТАКТЫ</p>
+            <p><img src="img/markerplace.png" alt="" class="marker"><span>г. Харьков, ул. Лермонтовская 10а</span></p>
+            <p class="text border"><img src="img/markerphone.png" alt="" class="marker"><span>+38 (099) 990-81-00</span></p>
+            <p><a href="#"><img src="img/facebook.png" alt=""></a><a href="#"><img src="img/instagram.png" alt="" class="inst"></a></p>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
