@@ -1,22 +1,5 @@
 'use strict'
 
-function backgroundChange() {
-    let header = document.getElementById('header');
-    let i = 1;
-    let interval = setInterval(function(){
-        if(i<5) {
-            i++
-            header.style.backgroundImage = "url(../img/"+ i + ".jpg)";
-        }
-        else {
-            i =1;
-            header.style.backgroundImage = "url(../img/"+ i + ".jpg)";
-        }
-    }, 3000)
-};
-
-backgroundChange();
-
 function toursMenuOn() {
     let tours = document.getElementById('tourslink');
     let toursmenu = document.getElementById('toursmenu');
@@ -26,10 +9,10 @@ function toursMenuOn() {
         }
         else {
             toursmenu.classList.add('visibletour');
-        }
-    })
+        };
+    });
 };
-toursMenuOn()
+toursMenuOn();
 
 function servisesMenuOn() {
     let tours = document.getElementById('serviseslink');
@@ -40,10 +23,10 @@ function servisesMenuOn() {
         }
         else {
             toursmenu.classList.add('visibleservises');
-        }
-    })
+        };
+    });
 };
-servisesMenuOn()
+servisesMenuOn();
 
 function circleActive () {
     let circle = document.querySelectorAll('.circle');
@@ -63,8 +46,8 @@ function circleActive () {
             circle[1].classList.remove('active');
             circle[2].classList.remove('active');
             circle[0].classList.add('active');
-        }
-    })
+        };
+    });
 };
 
 circleActive ()
@@ -80,8 +63,53 @@ function mainTourActive () {
         else if(event.target == maintour[0]) {
             maintour[1].classList.remove('activemenu');
             maintour[0].classList.add('activemenu');
-        }
-    })
+        };
+    });
 };
 
-mainTourActive ()
+mainTourActive ();
+
+function countriesOn(){
+    let point = document.getElementById('countrymenu');
+    let countriesmenu = document.getElementById('countries');
+    window.addEventListener('click', function (event) {
+        if(event.target == point) {
+            countriesmenu.classList.toggle('countrieshide');
+        }
+        else { 
+            countriesmenu.classList.add('countrieshide');
+        };
+    });
+};
+
+countriesOn();
+
+function inputValue() {
+    let countryid = document.getElementById('countryid');
+    let countries = document.querySelectorAll('.val');
+    window.addEventListener('click', function(event) {
+        if(event.target == countries[0]) {
+            countryid.value = countries[0].innerHTML;
+        }
+        else if(event.target == countries[1]) {
+            countryid.value = countries[1].innerHTML;
+        }
+        else if(event.target == countries[2]) {
+            countryid.value = countries[2].innerHTML;
+        }
+        else if(event.target == countries[3]) {
+            countryid.value = countries[3].innerHTML;
+        };
+    });
+};
+
+inputValue();
+
+function onScroll() {
+    let hidden = document.getElementById('countries');
+    window.addEventListener('scroll', function() {
+        hidden.classList.add('countrieshide');
+    });
+};
+
+onScroll();

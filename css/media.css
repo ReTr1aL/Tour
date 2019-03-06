@@ -1,0 +1,272 @@
+@media screen and (max-width: 1820px) {
+    .slideitem {
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 1650px) {
+    .slideinfo {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 1575px) {
+    .slideitem {
+        display: block;
+        margin: 0px;
+    }
+    .slideinfo {
+        margin: 0px;
+    }
+    .carousel-item {
+        padding-bottom: 50px;
+    }
+    .logoheader {
+        position: absolute;
+        left: 10%;
+        top: 4%;
+    }
+    #registration {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    form {
+        display: block;
+        height: inherit;
+        margin-top: 10px;
+    }
+    form input {
+        display: block;
+    }
+    #getsentence {
+        position: static;
+    }
+    #registration {
+        flex-direction: column;
+        padding-top: 20px;
+        margin-top: 50px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #submit {
+        margin-bottom: 10px;
+    }
+    #countrymenu {
+        right: -59%;
+        top: -15%;
+    }
+    .deals {
+        margin-left: 200px;
+    }
+
+    button {
+        margin-left: 200px;
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    .bestdeals {
+        width: inherit;
+    }
+
+    .deals {
+        margin-left: 200px;
+        margin-right: 50px;
+    }
+    #header {
+        flex-direction: column;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #navbar {
+        position: static;
+    }
+    .info {
+        position: static;
+    }
+    .logoheader {
+       position: static;
+    }
+    .info p {
+        margin: 20 5 0 5px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    footer {
+       position: static;
+       height: inherit;
+    }
+    #registration {
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 1125px) {
+    .deals {
+        margin-left: 100px;
+    }
+    button {
+        margin-left: 100px;
+    }
+    #page {
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    #page {
+        padding-right: 0px;
+    }
+    .block {
+        margin: 0 30px;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .advantages {
+        flex-direction: column;
+    }
+    #registration {
+        margin-top: 230px;
+    }
+    #page {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .carousel-item {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+    .slideitem {
+        margin-top: 20px;
+    }
+    #registration {
+        margin-top: 940px;
+    }
+    #page {
+        margin-top:10px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    #tours{
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 816px) {
+    #navbar a {
+        padding: 10 20 5px;
+    }
+    #serviseslink {
+        padding: 10 20 5px;
+    }
+    #tourslink{
+        padding: 10 20 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .block {
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 696px) {
+    #navbar a {
+        padding: 5 10 5px;
+    }
+    #serviseslink {
+        padding: 5 10 5px;
+    }
+    #tourslink{
+        padding: 5 10 5px;
+    } 
+    #navbar {
+        right: 9%;
+    }
+    #services::before {
+        display: none;
+    }
+
+    #services::after {
+        display: none;
+    }
+
+    #tours::before {
+        display: none;
+    }
+
+    #tours::after {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    #mobiledelete {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .bestdeals {
+        display: none;
+    }
+    #activeblock {
+        display: none;
+    }
+    #navbar {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    #toursmenu {
+        width: 100%;
+        text-align: center;
+        position: static;
+    }
+    #servisesmenu {
+        width: 100%;
+        text-align: center;
+        position: static;
+    }
+    .info {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    #page {
+        width: 450px;
+    }
+    .center {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 518px) {
+    main {
+        display: none;
+    }
+    #registration {
+        margin: 0px;
+    }
+    #page {
+        width: 400px;
+        margin: 10   auto;
+    }
+    .navigationdelete {
+        display: none;
+    }
+    .supportdelete {
+        display: none;
+    }
+}

@@ -3,7 +3,9 @@ body {
 }
 
 #header {
-    background-image: url(../img/1.jpg);
+    animation: change  35s infinite linear;
+    -webkit-animation: change  35s infinite linear;
+    -moz-animation: change  35s infinite linear;
     height: 735px;
     background-repeat: no-repeat;
     background-position: center;
@@ -159,8 +161,8 @@ footer {
     bottom: 0%;
     width: 100%;
     color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 35px;
+    padding-bottom: 5px;
     z-index: 3;
     height: 200px;
 }
@@ -190,9 +192,9 @@ footer a {
 }
 
 .text {
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    margin-top: 25px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    margin-top: 15px;
     font-size: 14px;
     font-family: arialRegular;
 }
@@ -281,6 +283,23 @@ button {
     background: #fbd341;
 }
 
+#serviseslink {
+    color: black;
+    padding: 17 30 12px;
+    display: block;
+    margin: 0px;
+    cursor: pointer;
+}
+
+#tourslink {
+    color: black;
+    padding: 17 30 12px;
+    display: block;
+    margin: 0px;
+    cursor: pointer;
+}
+
+
 #activeblock {
     position: absolute;
     bottom: 3.5%;
@@ -321,7 +340,7 @@ main {
     justify-content: center;
     text-align: center;
     padding-top: 140px;
-    padding-bottom: 140px;
+    padding-bottom: 100px;
 }
 
 .carousel-item img {
@@ -568,7 +587,7 @@ sup {
     margin-bottom: 240px;
 }
 
-#registration div {
+#getsentence {
     color: white;
     position: absolute;
     top: 15%;
@@ -593,6 +612,7 @@ form {
     justify-content: center;
     align-items: center;
     padding: 0 40px;
+    position: relative;
 }
 
 input {
@@ -600,8 +620,11 @@ input {
     border: none;
     border-bottom: 1px solid rgba(197, 189, 189, 0.5);
     margin-right: 40px;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0);
     color: white;
+    padding-left: 13px;
+    font-size: 16px;
+    font-family: "arialRegular";
 }
 
 :focus {
@@ -611,6 +634,64 @@ input {
 
 input::placeholder {
     color: white;
+    opacity: 0.8;
+    font-size: 16px;
+    font-family: "arialRegular";
+}
+
+#countrymenu {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    right: 7.5%;
+}
+
+#countrymenu:before{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 50%;
+    left: 28%;
+    transform: rotate(45deg);
+    border-radius: 30%;
+}
+
+#countrymenu::after{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 50%;
+    left: 46%;
+    transform: rotate(135deg);
+    border-radius: 30%;
+}
+
+#countries {
+    background: #f8f7f7;
+    list-style-type: none;
+    padding: 15 90 15 25px;
+    line-height: 1.5;
+    position: absolute;
+    top: 56%;
+    right: -40%;
+    z-index: 4;
+}
+
+#countries li:hover {
+    color: #fbd341;
+    cursor: pointer;
+}
+
+#countries li {
+    font-size: 16px;
+    font-family: "arialRegular";
     opacity: 0.8;
 }
 
@@ -622,6 +703,10 @@ input::placeholder {
 @font-face {
     font-family: "arialRegular";
     src: url(../font/arialRegular.ttf);
+}
+
+.countrieshide {
+    display: none;
 }
 
 #page {
@@ -654,3 +739,23 @@ input::placeholder {
     background: #fbd341;
     border-radius: 10px;
 }
+
+@keyframes change {
+    from {background-image: url(../img/1.jpg);}
+    0.1% {background-image: url(../img/1.jpg);}
+    0.2% {background-image: url(../img/2.jpg);}
+    0.3% {background-image: url(../img/3.jpg);}
+    0.4% {background-image: url(../img/4.jpg);}
+    0.5% {background-image: url(../img/5.jpg);}
+    0.6% {background-image: url(../img/1.jpg);}
+    10% {background-image: url(../img/1.jpg);}
+    20% {background-image: url(../img/2.jpg);}
+    30% {background-image: url(../img/2.jpg);}
+    40% {background-image: url(../img/3.jpg);}
+    50% {background-image: url(../img/3.jpg);}
+    60% {background-image: url(../img/4.jpg);}
+    70% {background-image: url(../img/4.jpg);}
+    80% {background-image: url(../img/5.jpg);}
+    90% {background-image: url(../img/5.jpg);}
+    to {background-image: url(../img/1.jpg);}
+    }
