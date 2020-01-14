@@ -1,11 +1,3 @@
-$(document).ready(function(){
-  $("#maincarousel").owlCarousel({
-    items: 1,
-    loop: true,
-    autoplay: true,
-  });
-});
-
 $(function() {
   // Owl Carousel
   var owl = $(".owl-carousel");
@@ -14,6 +6,8 @@ $(function() {
     margin: 0,
     loop: false,
     nav: true,
+    loop: true,
+    autoplay: true,
     responsive : {
       // breakpoint from 0 up
       0 : {
