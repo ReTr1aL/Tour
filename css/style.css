@@ -1,5 +1,7 @@
 body {
     margin: 0px;
+    position: relative;
+    padding-bottom:  235px;
 }
 
 #header {
@@ -9,9 +11,9 @@ body {
     height: 735px;
     background-repeat: no-repeat;
     background-position: center;
-    position: relative;
     max-width: 1920px;
     margin: 0 auto;
+    position: relative;
 }
 
 #navbar {
@@ -104,6 +106,26 @@ body {
     font-size: 14px;
     font-family: arialRegular;
     padding-bottom: 15px;
+    max-height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#toursmenu::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+#toursmenu::-webkit-scrollbar-track {
+    background: #e1e0e0;
+    border: 4px solid transparent;
+    background-clip: content-box; 
+}
+
+/* Handle */
+#toursmenu::-webkit-scrollbar-thumb {
+    background: #fbd341;
+    border-radius: 10px;
 }
 
 #servisesmenu {
@@ -114,6 +136,26 @@ body {
     font-size: 14px;
     font-family: arialRegular;
     padding-bottom: 15px;
+    max-height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#servisesmenu::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+#servisesmenu::-webkit-scrollbar-track {
+    background: #e1e0e0;
+    border: 4px solid transparent;
+    background-clip: content-box; 
+}
+
+/* Handle */
+#servisesmenu::-webkit-scrollbar-thumb {
+    background: #fbd341;
+    border-radius: 10px;
 }
 
 #toursmenu li {
@@ -157,14 +199,12 @@ footer {
     background: #22334d;
     display: flex;
     justify-content: center;
-    position: fixed;
-    bottom: 0%;
     width: 100%;
     color: white;
     padding-top: 35px;
     padding-bottom: 5px;
-    z-index: 3;
-    height: 200px;
+    position: absolute;
+    bottom:  0px;
 }
 
 footer a {
@@ -307,10 +347,8 @@ button {
 }
 
 main {
-    height: 950px;
     max-width: 1920px;
     margin: 0 auto;
-    position: relative;
 }
 
 .carousel {
@@ -584,7 +622,7 @@ sup {
     position: relative;
     padding-top: 100px;
     padding-bottom: 27px;
-    margin-bottom: 240px;
+    margin-top:  100px;
 }
 
 #getsentence {
@@ -758,4 +796,74 @@ input::placeholder {
     80% {background-image: url(../img/5.jpg);}
     90% {background-image: url(../img/5.jpg);}
     to {background-image: url(../img/1.jpg);}
+    }
+
+    #imgwrapper {
+        width: 200px;
+        height: 200px;
+    }
+
+    #sliderdouble {
+        padding-left: 90px;
+        padding-right: 60px;
+        padding-top: 15px;
+    }
+
+    #sliderone {
+        padding-left: 90px;
+        padding-right: 60px;
+        padding-top: 15px;
+    }
+
+    .owl-carousel {
+        position: relative;
+    }
+
+    .owl-stage-outer{
+        max-height: 200px;
+        overflow: hidden;
+    }
+
+    .owl-next {
+        position: absolute;
+        top: 40%;
+        right: 0%;
+        margin-right: -30px;
+    }
+
+    .owl-item {
+        background-color: white;
+    }
+
+    .owl-next>span{
+        font-size: 46px;
+    }
+
+    .owl-prev {
+        position: absolute;
+        top: 40%;
+        left: 0%;
+        margin-left: -50px;
+    }
+
+    .owl-prev>span{
+        font-size: 46px;
+    }
+
+    .owl-item {
+        margin: 0px;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .mainslider {
+        margin-left: 350px;
+        margin-bottom: 30px;;
+    }
+
+    #slidercontainer {
+        padding-top:  100px;
+        padding-bottom: 150px;
     }

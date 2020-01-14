@@ -52,22 +52,22 @@ function circleActive () {
 
 circleActive ()
 
-function mainTourActive () {
-    let maintour = document.querySelectorAll('.maintour');
-    let blockparent = document.getElementById('mainparent');
-    blockparent.addEventListener('click', function (event) {
-        if(event.target == maintour[1]) {
-            maintour[0].classList.remove('activemenu');
-            maintour[1].classList.add('activemenu');
-        }
-        else if(event.target == maintour[0]) {
-            maintour[1].classList.remove('activemenu');
-            maintour[0].classList.add('activemenu');
-        };
-    });
-};
+// function mainTourActive () {
+//     let maintour = document.querySelectorAll('.maintour');
+//     let blockparent = document.getElementById('mainparent');
+//     blockparent.addEventListener('click', function (event) {
+//         if(event.target == maintour[1]) {
+//             maintour[0].classList.remove('activemenu');
+//             maintour[1].classList.add('activemenu');
+//         }
+//         else if(event.target == maintour[0]) {
+//             maintour[1].classList.remove('activemenu');
+//             maintour[0].classList.add('activemenu');
+//         };
+//     });
+// };
 
-mainTourActive ();
+// mainTourActive ();
 
 function countriesOn(){
     let point = document.getElementById('countrymenu');
@@ -113,3 +113,169 @@ function onScroll() {
 };
 
 onScroll();
+
+function removeTest3(){
+    sliderone.classList.remove('hidden');
+}
+
+function removeTest2(){
+    sliderdouble.classList.remove('hidden');
+}
+
+function popularOn(callback) {
+    let popular = document.getElementById('popular');
+    let hot = document.getElementById('hot');
+    let sliderone = document.getElementById('sliderone');
+    window.addEventListener('click', function (e) {
+        if(e.target == popular) {
+            popular.style = "color: #fbd341;";
+            hot.style = "color: black;";
+            sliderone.classList.add('hidden');
+            callback()
+        }
+    });
+};
+popularOn(removeTest2);
+
+function hotOn(callback) {
+    let hot = document.getElementById('hot');
+    let popular = document.getElementById('popular');
+    let sliderdouble = document.getElementById('sliderdouble');
+    window.addEventListener('click', function (e) {
+        if(e.target == hot) {
+            hot.style = "color: #fbd341;";
+            popular.style = "color: black;";
+            sliderdouble.classList.add('hidden');
+            callback()
+        }
+    });
+};
+hotOn(removeTest3);
+
+function validate() {
+    let userName = document.getElementById("name");
+    let userMail = document.getElementById("mail");
+    let userPhone = document.getElementById("phone");
+    let userCountry = document.getElementById("countryid");
+    let forms = document.getElementById("forms");
+
+    if(!userName.value && !userName.value && !userPhone.value && !userCountry.value) {
+        userName.style.borderBottom = "1px solid red";
+        userMail.style.borderBottom = "1px solid red";
+        userPhone.style.borderBottom = "1px solid red";
+        userCountry.style.borderBottom = "1px solid red";
+        return false
+    }
+    if(userName.value && !userMail.value && !userPhone.value &&  !userCountry.value) {
+        userName.style.borderBottom = "1px solid rgba(197, 189, 189, 0.5)";
+        userMail.style.borderBottom = "1px solid red";
+        userPhone.style.borderBottom = "1px solid red";
+        userCountry.style.borderBottom = "1px solid red";
+        return false
+    }
+
+    if(!userName.value && !userMail.value && userPhone.value && !userCountry.value) {
+        userName.style.borderBottom = "1px solid red";
+        userMail.style.borderBottom = "1px solid red";
+        userPhone.style.borderBottom = "1px solid rgba(197, 189, 189, 0.5)";
+        userCountry.style.borderBottom = "1px solid red";
+        return false
+    }
+    
+
+    if(!userName.value && userMail.value && !userPhone.value && !userCountry.value) {
+        userName.style.borderBottom = "1px solid red";
+        userMail.style.borderBottom = "1px solid rgba(197, 189, 189, 0.5)";
+        userPhone.style.borderBottom = "1px solid red";
+        userCountry.style.borderBottom = "1px solid red";
+        return false
+    }
+
+    if(!userName.value && !userMail.value && !userPhone.value && userCountry.value) {
+        userName.style.borderBottom = "1px solid red";
+        userMail.style.borderBottom = "1px solid red";
+        userPhone.style.borderBottom = "1px solid red";
+        userCountry.style.borderBottom = "1px solid rgba(197, 189, 189, 0.5)";
+        return false
+    }
+
+    if(userName.value && userMail.value && !userPhone.value && !userCountry.value) {
+        userName.style.borderBottom = "1px solid rgba(197, 189, 189, 0.5)";
+        userMail.style.borderBottom = "1px solid rgba(197, 189, 189, 0.5)";
+        userPhone.style.borderBottom = "1px solid red";
+        userCountry.style.borderBottom = "1px solid red";
+        return false
+    }
+
+    if(userName.value && !userMail.value && userPhone.value && !userCountry.value) {
+        userName.style.borderBottom = "1px solid rgba(197, 189, 189, 0.5)";
+        userMail.style.borderBottom = "1px solid red";
+        userPhone.style.borderBottom = "1px solid rgba(197, 189, 189, 0.5)";
+        userCountry.style.borderBottom = "1px solid red";
+        return false
+    }
+
+    if(userName.value && !userMail.value && !userPhone.value && userCountry.value) {
+        userName.style.borderBottom = "1px solid rgba(197, 189, 189, 0.5)";
+        userMail.style.borderBottom = "1px solid red";
+        userPhone.style.borderBottom = "1px solid red";
+        userCountry.style.borderBottom = "1px solid rgba(197, 189, 189, 0.5)";
+        return false
+    }
+
+    if(!userName.value && userMail.value && userPhone.value && !userCountry.value) {
+        userName.style.borderBottom = "1px solid red";
+        userMail.style.borderBottom = "1px solid rgba(197, 189, 189, 0.5)";
+        userPhone.style.borderBottom = "1px solid rgba(197, 189, 189, 0.5)";
+        userCountry.style.borderBottom = "1px solid red";
+        return false
+    }
+
+    if(!userName.value && userMail.value && !userPhone.value && userCountry.value) {
+        userName.style.borderBottom = "1px solid red";
+        userMail.style.borderBottom = "1px solid rgba(197, 189, 189, 0.5)";
+        userPhone.style.borderBottom = "1px solid red";
+        userCountry.style.borderBottom = "1px solid rgba(197, 189, 189, 0.5)";
+        return false
+    }
+
+    if(!userName.value && !userMail.value && userPhone.value && userCountry.value) {
+        userName.style.borderBottom = "1px solid red";
+        userMail.style.borderBottom = "1px solid red";
+        userPhone.style.borderBottom = "1px solid rgba(197, 189, 189, 0.5)";
+        userCountry.style.borderBottom = "1px solid rgba(197, 189, 189, 0.5)";
+        return false
+    }
+
+    if(!userName.value && userMail.value && userPhone.value && userCountry.value) {
+        userName.style.borderBottom = "1px solid red";
+        userMail.style.borderBottom = "1px solid rgba(197, 189, 189, 0.5)";
+        userPhone.style.borderBottom = "1px solid rgba(197, 189, 189, 0.5)";
+        userCountry.style.borderBottom = "1px solid rgba(197, 189, 189, 0.5)";
+        return false
+    }
+
+    if(userName.value && !userMail.value && userPhone.value && userCountry.value) {
+        userName.style.borderBottom = "1px solid rgba(197, 189, 189, 0.5)";
+        userMail.style.borderBottom = "1px solid red";
+        userPhone.style.borderBottom = "1px solid rgba(197, 189, 189, 0.5)";
+        userCountry.style.borderBottom = "1px solid rgba(197, 189, 189, 0.5)";
+        return false
+    }
+
+    if(userName.value && userMail.value && !userPhone.value && userCountry.value) {
+        userName.style.borderBottom = "1px solid rgba(197, 189, 189, 0.5)";
+        userMail.style.borderBottom = "1px solid rgba(197, 189, 189, 0.5)";
+        userPhone.style.borderBottom = "1px solid red";
+        userCountry.style.borderBottom = "1px solid rgba(197, 189, 189, 0.5)";
+        return false
+    }
+    
+    if(userName.value && userMail.value && userPhone.value && !userCountry.value) {
+        userName.style.borderBottom = "1px solid rgba(197, 189, 189, 0.5)";
+        userMail.style.borderBottom = "1px solid rgba(197, 189, 189, 0.5)";
+        userPhone.style.borderBottom = "1px solid rgba(197, 189, 189, 0.5)";
+        userCountry.style.borderBottom = "1px solid red";
+        return false
+    }
+}

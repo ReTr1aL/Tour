@@ -1,9 +1,3 @@
-@media screen and (max-width: 1820px) {
-    .slideitem {
-        margin-right: 5px;
-    }
-}
-
 @media screen and (max-width: 1650px) {
     .slideinfo {
         margin-left: 10px;
@@ -28,6 +22,15 @@
     }
     #registration {
         margin-top: 50px;
+    }
+    #imgwrapper{
+        width: 150px;
+        height: 150px;
+        float: left;
+    }
+
+    .time{
+        padding: 0;
     }
 }
 
@@ -95,11 +98,35 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
-    footer {
-       position: static;
-       height: inherit;
+@media screen and (max-width: 1352px) {
+    #registration {
+        padding-bottom: 50px;
     }
+}
+
+@media screen and (max-width: 1222px) {
+    #mobiledelete {
+        display: none;
+    }
+
+    #registration {
+        padding-bottom: 0px;
+    }
+    footer {
+        padding-top: 43px;
+    }
+    #forms {
+        margin-bottom: 20px;
+    }
+    .block {
+        margin: 0 10px;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1200px) {
     #registration {
         margin-bottom: 0px;
     }
@@ -130,9 +157,6 @@
     .advantages {
         flex-direction: column;
     }
-    #registration {
-        margin-top: 230px;
-    }
     #page {
         margin-top: 0px;
     }
@@ -146,9 +170,6 @@
     }
     .slideitem {
         margin-top: 20px;
-    }
-    #registration {
-        margin-top: 940px;
     }
     #page {
         margin-top:10px;
@@ -233,6 +254,7 @@
         position: static;
     }
     #servisesmenu {
+
         width: 100%;
         text-align: center;
         position: static;
@@ -240,6 +262,18 @@
     .info {
         display: block;
         text-align: center;
+    }
+    .navigationdelete {
+        display: none;
+    }
+    .supportdelete {
+        display: none;
+    }
+    footer {
+        padding-top: 55px;
+    }
+    #slidercontainer {
+        display: none;
     }
 }
 
@@ -263,10 +297,9 @@
         width: 400px;
         margin: 10   auto;
     }
-    .navigationdelete {
-        display: none;
+    header {
+        height: 715px;
+        padding: 0px;
     }
-    .supportdelete {
-        display: none;
-    }
+    
 }
